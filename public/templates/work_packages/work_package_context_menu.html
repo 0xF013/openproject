@@ -3,7 +3,7 @@
     <li class="open">
       <a focus href
       	ui-sref="work-packages.list.details.overview({workPackageId: row.object.id})" 		ng-bind="I18n.t('js.button_open_details')">
-      		<i ng-class="['icon-context', 'icon-table-detail-view']"></i>
+      		<i ng-class="['icon-action-menu', 'icon-table-detail-view']"></i>
       </a>
     </li>
     <li ng-repeat="(action, link) in permittedActions"
@@ -12,7 +12,7 @@
       <a href
         ng-click="deleteWorkPackages()"
         ng-bind="I18n.t('js.button_' + action)">
-         	<i ng-class="['icon-context', 'icon-' + action]"></i>
+         	<i ng-class="['icon-action-menu', 'icon-' + action]"></i>
       </a>
     </li>
 
